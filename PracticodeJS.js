@@ -1,17 +1,4 @@
-function perimetroCuadrado(){
-const click = document.getElementById("cuadrado");
-const lado = click.value;
-CalcularperimetroCuadrado(lado);
-}
-
-function CalcularperimetroCuadrado(ladodelC){
-    const Perimetro = ladodelC * 4;
-    alert("El perimetro es igual a " + Perimetro)
-
-}
-
 //Triangulo
-
 function AreaTriangulo(){
     const ladoA = document.getElementById("ladoA");
     const lado_1 = parseInt(ladoA.value);
@@ -58,5 +45,3 @@ function calcular_area (lado1, lado2, base){
     const area_triangulo = (s*(s-lado1)*(s-lado2)*(s-base)) ** 0.5;
     return area_triangulo;
 }
-
-
