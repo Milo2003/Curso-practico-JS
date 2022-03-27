@@ -9,14 +9,14 @@ function calcularValorConDescuento() {
     const precio = parseInt(precioOriginal.value);
     const coupon = document.getElementById("Coupon");
     const couponValue = coupon.value;
-
     const isUsersCouponValid = function (Cupon){
         return Cupon.name === couponValue;
-    }
+    } 
 
     const userCoupon = Cupones.find(isUsersCouponValid);
 
     if(!userCoupon){
+        
         alert("Tu cupon " + couponValue + " no es valido");
     }
     else {
@@ -26,7 +26,6 @@ function calcularValorConDescuento() {
         resultP.innerText = "El precio con descuento es: $" + devolverPreciofinal.toFixed(2) + " pesos";
     }
 }
-
 function priceWithDiscount (price, descuentototal){
     const value = price - (price * descuentototal);
     return value;
